@@ -5,40 +5,145 @@ html, body, * {
 }
 
 .wrap {
-  width: 100vw;
-  height: 100vh;
+  padding: 1%;
+  width: 99vw;
   background-color: rgb(187, 184, 184);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+
+header {
+  background-color: gainsboro;
+  padding: 0 10% 5%;
+  white-space: pre-wrap;
+  border-radius: 20px;
+}
+header p {
+  line-height: 150%;
 }
 
 h1 {
+  margin-bottom: 5%;
   font-size: 52px;
-  color: black;
+  color: seagreen;
+  text-shadow: 2px 2px greenyellow;
   text-align: center;
 }
+.photo {
+  width: 400px;
+  height: 520px;
+  border-radius: 5%;
+  float: right;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.67);
+}
+.about {
+  font-size: 25px;
+  box-shadow: 15px 15px 15px rgba(0, 128, 0, 0.5) inset;
+}
 
+.education {
+  text-align: center;
+  background-color: ivory;
+  border-radius: 20px;
+}
+.education h2 {
+  margin-top: 5%;
+  font-size: 52px;
+  color: #ff9500;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.67);
+}
+.description-education {
+  display: flex;
+  padding: 5%;
+}
+.description-education-frontend h3 {
+  font-size: 32px;
+  color: cornflowerblue;
+  text-shadow: 1px 1px black;
+}
+.description-education-backend h3 {
+  font-size: 32px;
+  color: green;
+  text-shadow: 1px 1px black;
+}
+.description-education-frontend img, .description-education-backend img {
+  margin: 5% 0 0;
+  width: 70%;
+  cursor: pointer;
+  transition: .5s;
+}
+.description-education-frontend img {
+  box-shadow: 20px 20px 100px rgba(0, 0, 255, 0.5);
+}
+.description-education-backend img {
+  box-shadow: 20px 20px 100px rgba(0, 128, 0, 0.5);
+}
+.description-education-frontend img:hover, .description-education-backend img:hover {
+  width: 100%;
+}
+
+.projects {
+  background-color: gainsboro;
+  border-radius: 20px;
+  margin-bottom: 5%;
+}
+.projects>h2 {
+  margin: 5% 0;
+  font-size: 52px;
+  color: #333131;
+  text-shadow: 2px 2px greenyellow;
+  text-align: center;
+}
 .task-box {
   width: 100%;
-  height: 100px;
-  border: 2px solid oldlace;
+  height: 300px;
+  position: relative;
 }
 
-.task-box::selection {
-  background: cyan;
+.preview-task-box {
+  width: 30%;
+  border-radius: 0 20px 0 0;
+  background-color: aliceblue;
+  transition: .5s;
+  text-align: center;
+  cursor: pointer;
+}
+.preview-task-box-two, .preview-task-box-four {
+  border-radius: 20px 0 0 0;
+  position: absolute;
+  right: 0;
+}
+.preview-task-box:hover {
+  width: 70%;
+  box-shadow: 5px 5px 10px cornflowerblue;
 }
 
+.description-task-box {
+  padding-left: 10%;
+  text-align: left;
+  font-size: 20px;
+}
+.description-task-box-visible {
+  display: none;
+}
+
+footer {
+  background-color: ivory;
+  padding: 3% 0 0%;
+  border-radius: 20px;
+}
 .footer-list {
- 
-}
 
+}
 .list {
   display: flex;
   justify-content: space-around;
+  list-style: none;
 }
-
 .item-list {
   cursor: pointer;
-  margin-bottom: 30px;
+  transition: transform .3s;
+}
+.item-list:hover {
+  transform: scale(1.5);
 }
