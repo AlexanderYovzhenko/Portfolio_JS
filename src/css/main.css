@@ -7,26 +7,27 @@ html, body, * {
 .wrap {
   padding: 1%;
   width: 99vw;
-  background-color: rgb(187, 184, 184);
+  background-image: url('../img/kosmos-pejzazh-planety-11712.jpeg');
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
 }
 
 header {
-  background-color: gainsboro;
   padding: 0 10% 5%;
   white-space: pre-wrap;
   border-radius: 20px;
 }
 header p {
   line-height: 150%;
+  color: gainsboro;
 }
 
 h1 {
   margin-bottom: 5%;
   font-size: 52px;
   color: seagreen;
-  text-shadow: 2px 2px greenyellow;
+  text-shadow: 2px 2px white;
   text-align: center;
 }
 .photo {
@@ -34,16 +35,17 @@ h1 {
   height: 520px;
   border-radius: 5%;
   float: right;
-  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.67);
+  box-shadow: 10px 10px 5px rgba(40, 110, 40, 0.5);
+  cursor: pointer;
+  transition: .3s;
 }
 .about {
   font-size: 25px;
-  box-shadow: 15px 15px 15px rgba(0, 128, 0, 0.5) inset;
+  box-shadow: 15px 15px 15px rgba(0, 128, 0, 0.7) inset;
 }
 
 .education {
   text-align: center;
-  background-color: ivory;
   border-radius: 20px;
 }
 .education h2 {
@@ -83,15 +85,14 @@ h1 {
 }
 
 .projects {
-  background-color: gainsboro;
   border-radius: 20px;
-  margin-bottom: 5%;
+  margin: 0 -1% 5%;
 }
 .projects>h2 {
   margin: 5% 0;
   font-size: 52px;
-  color: #333131;
-  text-shadow: 2px 2px greenyellow;
+  color: rgb(255, 149, 0);
+  text-shadow: 2px 2px black;
   text-align: center;
 }
 .task-box {
@@ -128,7 +129,6 @@ h1 {
 }
 
 footer {
-  background-color: ivory;
   padding: 3% 0 0%;
   border-radius: 20px;
 }
